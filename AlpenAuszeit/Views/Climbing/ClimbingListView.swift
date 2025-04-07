@@ -6,10 +6,6 @@ struct ClimbingListView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("Entdecken Sie die besten Klettersteige in der Region")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .padding(.horizontal)
                 
                 // Gruppiere die Klettersteige nach Standort mit benutzerdefinierter Sortierung
                 let locations = viewModel.routesByLocation().keys.sorted {

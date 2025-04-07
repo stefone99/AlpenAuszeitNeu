@@ -8,11 +8,6 @@ struct HotelListView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 
-                Text("Tippen Sie auf ein Hotel für weitere Informationen")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .padding(.horizontal)
-                
                 LazyVStack(spacing: 16) {
                     ForEach(viewModel.hotels) { hotel in
                         NavigationLink(destination: HotelDetailView(hotel: hotel, viewModel: viewModel)) {
