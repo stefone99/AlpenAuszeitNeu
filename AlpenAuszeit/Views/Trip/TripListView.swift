@@ -19,3 +19,12 @@ struct TripListView: View {
         }
     }
 }
+
+// Preview
+struct TripListView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            TripListView(viewModel: TripViewModel())
+        }
+    }
+}

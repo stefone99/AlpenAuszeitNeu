@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HikingCard: View {
     let hike: Hike
+    @ObservedObject var viewModel: HikingViewModel
     
     var body: some View {
         ZStack {

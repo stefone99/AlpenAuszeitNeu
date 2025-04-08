@@ -24,8 +24,8 @@ struct ClimbingListView: View {
                             
                             // Alle Klettersteige an diesem Ort
                             ForEach(routes) { climbingRoute in
-                                NavigationLink(destination: ClimbingDetailView(climbingRoute: climbingRoute)) {
-                                    ClimbingCard(climbingRoute: climbingRoute)
+                                NavigationLink(destination: ClimbingDetailView(climbingRoute: climbingRoute, viewModel: viewModel)) {
+                                    ClimbingCard(climbingRoute: climbingRoute, viewModel: viewModel)
                                         .padding(.horizontal)
                                 }
                                 .buttonStyle(PlainButtonStyle())
@@ -44,6 +44,7 @@ struct ClimbingListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ClimbingListView(viewModel: ClimbingViewModel())
+                .navigationTitle("Klettersteige")
         }
     }
 }

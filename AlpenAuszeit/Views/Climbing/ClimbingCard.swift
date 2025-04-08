@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ClimbingCard: View {
     let climbingRoute: ClimbingRoute
+    @ObservedObject var viewModel: ClimbingViewModel
     
     var body: some View {
         ZStack {

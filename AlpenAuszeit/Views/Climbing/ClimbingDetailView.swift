@@ -3,6 +3,7 @@ import MapKit
 
 struct ClimbingDetailView: View {
     let climbingRoute: ClimbingRoute
+    @ObservedObject var viewModel: ClimbingViewModel
     
     var body: some View {
         ScrollView {
@@ -245,30 +246,5 @@ struct TopoDetailView: View {
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
         .toolbarBackground(Color.black, for: .navigationBar)
-    }
-}
-
-// Preview
-struct ClimbingDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            ClimbingDetailView(
-                climbingRoute: ClimbingRoute(
-                    name: "Maiklsteig",
-                    difficulty: "A/B",
-                    climbingHeight: "100 Hm",
-                    totalHeight: "550 Hm",
-                    climbingTime: "0:30 Min.",
-                    totalTime: "3:00 Std.",
-                    approachTime: "1:00 Std.",
-                    descentTime: "1:30 Std.",
-                    character: "Kurzer, steiler Steig durch die breite Felswand des Niederkaisers; ideal als Einstiegstour.",
-                    topoImageURL: URL(string: "https://www.bergsteigen.com/fileadmin/userdaten/import/topos/maiklsteig_st_johann_topo_0.jpg")!,
-                    coordinates: CLLocationCoordinate2D(latitude: 47.537891767165114, longitude: 12.402658586736543),
-                    location: "St. Johann in Tirol",
-                    infoLink: URL(string: "https://www.bergfex.at/sommer/tirol/touren/wanderung/3789911,maiklsteig/")
-                )
-            )
-        }
     }
 }

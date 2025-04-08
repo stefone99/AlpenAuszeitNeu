@@ -77,13 +77,11 @@ class HotelViewModel: ObservableObject {
                 boardType: "Frühstück",
                 mapLink: URL(string: "https://maps.app.goo.gl/hrgPMwv4TamHQgt6A")!,
                 images: [
-                    "https://www.amber-hotels.de/wp-content/uploads/sites/2/2024/05/aussen-24-1-1920x1080.jpeg",
-                    "https://www.amber-hotels.de/wp-content/uploads/sites/2/2024/05/Lobby-final--1920x1080.jpeg",
-                    "https://www.amber-hotels.de/wp-content/uploads/sites/2/2015/08/amber-residenz-bavaria-comfort-zimmer.jpg",
-                    "https://www.amber-hotels.de/wp-content/uploads/sites/2/2015/08/amber-residenz-bavaria-landhauszimmer.jpg",
-                    "https://www.amber-hotels.de/wp-content/uploads/sites/2/2022/02/amber-hotel-bavaria-pool_source_83435-1920x1080.jpg",
-                    "https://www.amber-hotels.de/wp-content/uploads/sites/2/2022/08/gradierwerk-2-1920x1080.jpg",
-                    "https://cdn.amber-hotels.de/wp-content/uploads/sites/2/2024/05/sauna1-scaled.jpeg"
+                    "https://bad-reichenhall.amber-hotels.de/wp-content/uploads/2024/12/aussen-24-1-2048x778-1-e1733997422141-300x300.jpeg",
+                    "https://bad-reichenhall.amber-hotels.de/wp-content/uploads/2024/05/Lobby-final-scaled-2-300x300.jpeg",
+                    "https://bad-reichenhall.amber-hotels.de/wp-content/uploads/2024/08/Landhaus-Zimmer-02-1024x670.jpg",
+                    "https://bad-reichenhall.amber-hotels.de/wp-content/uploads/2024/12/7-1-768x1024.png",
+                    "https://bad-reichenhall.amber-hotels.de/wp-content/uploads/2024/05/image00002-scaled-1-1024x768.jpeg"
                 ],
                 coordinates: CLLocationCoordinate2D(latitude: 47.7275, longitude: 12.8777)
             )

@@ -3,6 +3,7 @@ import WebKit
 
 struct HikingDetailView: View {
     let hike: Hike
+    @ObservedObject var viewModel: HikingViewModel
     
     var body: some View {
         ScrollView {
