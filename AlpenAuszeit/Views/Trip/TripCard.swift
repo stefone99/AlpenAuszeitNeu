@@ -7,7 +7,13 @@ struct TripCard: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color.white)
+                .fill(
+                    LinearGradient(
+                        gradient: Gradient(colors: [Color("bergfex_button").opacity(0.8), Color("bergfex_button").opacity(0.4)]),
+                        startPoint: .topLeading,
+                        endPoint: .bottomLeading
+                    )
+                )
                 .shadow(radius: 5)
             
             VStack(alignment: .leading, spacing: 15) {
@@ -19,13 +25,12 @@ struct TripCard: View {
                     
                     HStack(spacing: 4) {
                         Image(systemName: "train.side.front.car")
-                            .foregroundColor(.blue)
                         
                         Text("\(trip.stations.count) Stationen")
                             .font(.caption)
-                            .foregroundColor(.secondary)
                     }
                 }
+                .foregroundColor(.white)
                 
                 Divider()
                 
@@ -42,7 +47,7 @@ struct TripCard: View {
                     Spacer()
                     
                     Image(systemName: "arrow.right")
-                        .foregroundColor(.secondary)
+                        .foregroundColor(.white)
                     
                     Spacer()
                     
@@ -55,15 +60,16 @@ struct TripCard: View {
                             .font(.subheadline)
                     }
                 }
+                .foregroundColor(.white)
                 
                 HStack {
                     Spacer()
                     Text("Details anzeigen")
                         .font(.caption)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.white)
                     Image(systemName: "chevron.right")
                         .font(.caption)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.white)
                 }
             }
             .padding()

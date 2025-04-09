@@ -10,7 +10,7 @@ struct WeatherForecastCard: View {
             RoundedRectangle(cornerRadius: 12)
                 .fill(
                     LinearGradient(
-                        gradient: Gradient(colors: [Color.blue.opacity(0.6), Color.blue.opacity(0.3)]),
+                        gradient: Gradient(colors: [Color("bergfex_button").opacity(0.8), Color("bergfex_button").opacity(0.4)]),
                         startPoint: .top,
                         endPoint: .bottom
                     )

@@ -17,6 +17,7 @@ struct CurrentView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.horizontal)
+                    .foregroundStyle(Color("bergfex_button"))
                 
                 // Aktuelle Unterkunft
                 if let currentHotel = hotelViewModel.currentHotel {

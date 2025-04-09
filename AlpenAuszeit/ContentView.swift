@@ -149,7 +149,7 @@ struct ContentView: View {
                 Text("Klettersteige")
             }
         }
-        .accentColor(.blue)
+        .accentColor(Color("bergfex_button"))
     }
     
     // iPad-spezifische TabView mit UIKit

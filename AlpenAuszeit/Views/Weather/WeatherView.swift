@@ -9,7 +9,7 @@ struct WeatherView: View {
             RoundedRectangle(cornerRadius: 12)
                 .fill(
                     LinearGradient(
-                        gradient: Gradient(colors: [Color.blue.opacity(0.7), Color.blue.opacity(0.4)]),
+                        gradient: Gradient(colors: [Color("bergfex_button").opacity(0.8), Color("bergfex_button").opacity(0.4)]),
                         startPoint: .top,
                         endPoint: .bottom
                     )

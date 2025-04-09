@@ -9,9 +9,9 @@ struct HikingCard: View {
             RoundedRectangle(cornerRadius: 12)
                 .fill(
                     LinearGradient(
-                        gradient: Gradient(colors: [Color.green.opacity(0.7), Color.blue.opacity(0.4)]),
+                        gradient: Gradient(colors: [Color("bergfex_button").opacity(0.8), Color("bergfex_button").opacity(0.4)]),
                         startPoint: .topLeading,
-                        endPoint: .bottomTrailing
+                        endPoint: .bottomLeading
                     )
                 )
                 .shadow(radius: 5)
